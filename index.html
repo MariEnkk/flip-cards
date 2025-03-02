@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Lime Flip Cards</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="card">
+        <input type="checkbox" id="flip-cozy" />
+        <div class="card-inner">
+          <div
+            class="card-front"
+            style="
+              background-image: url('https://images.unsplash.com/photo-1529408686214-b48b8532f72c?ixlib=rb-0.3.5&auto=format&fit=crop&w=1350&q=80');
+            "
+          >
+            <div class="inner">
+              <h2>Cozy Apartment</h2>
+              <label for="flip-cozy" class="button details">Details</label>
+            </div>
+          </div>
+          <div class="card-back">
+            <div class="inner">
+              <h2>Cozy Apartment</h2>
+              <div class="info-group">
+                <div class="info">
+                  <i class="fas fa-users"></i><span>Fits 5 people</span>
+                </div>
+                <div class="info">
+                  <i class="fas fa-door-open"></i><span>4 Rooms</span>
+                </div>
+                <div class="info">
+                  <i class="fas fa-bed"></i><span>3 Bedrooms</span>
+                </div>
+                <div class="info">
+                  <i class="fas fa-bath"></i><span>1 Bath</span>
+                </div>
+              </div>
+              <div class="location">Location: Warsaw, Poland</div>
+              <div class="price">Price: 38€</div>
+              <div class="back-buttons">
+                <a href="#modal-cozy" class="button description-link"
+                  >View Description</a
+                >
+                <label for="flip-cozy" class="button back">Back</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <input type="checkbox" id="flip-modern" />
+        <div class="card-inner">
+          <div
+            class="card-front"
+            style="
+              background-image: url('https://images.unsplash.com/photo-1515263487990-61b07816b324?ixlib=rb-0.3.5&auto=format&fit=crop&w=1350&q=80');
+            "
+          >
+            <div class="inner">
+              <h2>Modern Flat</h2>
+              <label for="flip-modern" class="button details">Details</label>
+            </div>
+          </div>
+          <div class="card-back">
+            <div class="inner">
+              <h2>Modern Flat</h2>
+              <div class="info-group">
+                <div class="info">
+                  <i class="fas fa-users"></i><span>Fits 4 people</span>
+                </div>
+                <div class="info">
+                  <i class="fas fa-door-open"></i><span>3 Rooms</span>
+                </div>
+                <div class="info">
+                  <i class="fas fa-bed"></i><span>2 Bedrooms</span>
+                </div>
+                <div class="info">
+                  <i class="fas fa-bath"></i><span>1 Bath</span>
+                </div>
+              </div>
+              <div class="location">Location: Warsaw, Poland</div>
+              <div class="price">Price: 42€</div>
+              <div class="back-buttons">
+                <a href="#modal-modern" class="button description-link"
+                  >View Description</a
+                >
+                <label for="flip-modern" class="button back">Back</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <input type="checkbox" id="flip-luxury" />
+        <div class="card-inner">
+          <div
+            class="card-front"
+            style="
+              background-image: url('https://images.unsplash.com/photo-1529595354331-201ad3ae5e71?ixlib=rb-0.3.5&auto=format&fit=crop&w=658&q=80');
+            "
+          >
+            <div class="inner">
+              <h2>Luxury Property</h2>
+              <label for="flip-luxury" class="button details">Details</label>
+            </div>
+          </div>
+          <div class="card-back">
+            <div class="inner">
+              <h2>Luxury Property</h2>
+              <div class="info-group">
+                <div class="info">
+                  <i class="fas fa-users"></i><span>Fits 8 people</span>
+                </div>
+                <div class="info">
+                  <i class="fas fa-door-open"></i><span>7 Rooms</span>
+                </div>
+                <div class="info">
+                  <i class="fas fa-bed"></i><span>5 Bedrooms</span>
+                </div>
+                <div class="info">
+                  <i class="fas fa-bath"></i><span>2 Baths</span>
+                </div>
+              </div>
+              <div class="location">Location: Cracow, Poland</div>
+              <div class="price">Price: 60€</div>
+              <div class="back-buttons">
+                <a href="#modal-luxury" class="button description-link"
+                  >View Description</a
+                >
+                <label for="flip-luxury" class="button back">Back</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-cozy">
+      <div class="modal-content">
+        <a href="#" class="close">&times;</a>
+        <h3>Description</h3>
+        <p>
+          A very cozy and inviting apartment in the heart of Warsaw, Poland. The
+          apartment is fully furnished and filled with high-end technology in
+          every room, you will not have to worry about a thing! Every store and
+          main metro and tram stops is in 2 minutes of reach from the building!
+          Come check it out yourself!
+        </p>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-modern">
+      <div class="modal-content">
+        <a href="#" class="close">&times;</a>
+        <h3>Description</h3>
+        <p>
+          A modern apartment for a family in the center of Warsaw, Poland. It is
+          high-tech and provides a futuristic feeling. The old town in just 10
+          minutes of walk away! Come, visit us with your family!
+        </p>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-luxury">
+      <div class="modal-content">
+        <a href="#" class="close">&times;</a>
+        <h3>Description</h3>
+        <p>
+          A luxury apartment in a center of Cracow, Poland. It has much space,
+          which is great for relaxing, the apartment provides everything itself.
+          The great view of Cracow can be accessed through every window in the
+          apartment. It is filled with modernity in the heard of old town in
+          this historic city.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
+
